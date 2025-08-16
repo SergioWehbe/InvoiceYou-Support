@@ -1,0 +1,101 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>InvoiceYou — Support</title>
+  <style>
+    :root {
+      color-scheme: light dark;
+    }
+
+    body {
+      font-family: -apple-system, system-ui, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
+      margin: 0;
+    }
+
+    header,
+    main,
+    footer {
+      max-width: 760px;
+      margin: 0 auto;
+      padding: 24px;
+    }
+
+    header h1 {
+      margin: 0 0 8px;
+    }
+
+    section {
+      margin: 28px 0;
+    }
+
+    a {
+      text-underline-offset: 2px;
+    }
+
+    .card {
+      border: 1px solid rgba(127, 127, 127, .25);
+      border-radius: 12px;
+      padding: 16px;
+    }
+
+    ul {
+      margin: 8px 0 0 20px;
+    }
+
+    small {
+      opacity: .8;
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <h1>InvoiceYou — Support</h1>
+    <p>Get help, report a bug, or request a feature.</p>
+  </header>
+
+  <main>
+    <section class="card">
+      <h2>Contact</h2>
+      <p>Email: <a href="mailto:hello@sergiowehbe.com">hello@sergiowehbe.com</a></p>
+      <p>In-app: Settings → Support (“Ask a question”, “Report a bug”, “Suggest a feature”).</p>
+    </section>
+
+    <section class="card">
+      <h2>Quick help / FAQ</h2>
+      <ul>
+        <li><strong>Where is my data?</strong> 100% on-device. No sign-up.</li>
+        <li><strong>Export &amp; share:</strong> Share invoices as PDF or Factur-X (ZUGFeRD) from the invoice screen.
+        </li>
+        <li><strong>E-invoicing:</strong> Targets French 2026–27 mandate (Factur-X “urn:factur-x.eu:1p0:basic”).</li>
+        <li><strong>Subscriptions:</strong> In-app: Settings → 👑 Pro version</li>
+        <li><strong>Refunds:</strong> Use Apple’s portal: <a
+            href="https://reportaproblem.apple.com/">reportaproblem.apple.com</a>.</li>
+        <li><strong>Delete my data:</strong> All data lives inside the app; deleting the app deletes the data.</li>
+      </ul>
+    </section>
+
+    <section class="card">
+      <h2>Privacy &amp; GDPR</h2>
+      <p>Privacy policy: <a href="https://sergiowehbe.com/InvoiceYou-Privacy-Policy">sergiowehbe.com/InvoiceYou-Privacy-Policy</a></p>
+      <p>Privacy &amp; GDPR contact: <a href="mailto:hello@sergiowehbe.com">hello@sergiowehbe.com</a></p>
+    </section>
+
+    <section class="card">
+      <h2>App info</h2>
+      <p>App: InvoiceYou (iOS 18+). Compatible with iPhone XS and newer.</p>
+      <p><small>© 2025–<span id="year"></span> Sergio Wehbe</small></p>
+    </section>
+  </main>
+
+  <footer>
+    <small>This page is for App Store support and user questions about InvoiceYou.</small>
+  </footer>
+
+  <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+</body>
+
+</html>
